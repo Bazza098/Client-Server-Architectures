@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=/smart-campus-api/api/v1">
+    <title>Smart Campus API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f0f2f5;
+        }
+        .box {
+            background: white;
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 { color: #333; margin-bottom: 8px; }
+        p  { color: #666; margin-bottom: 24px; }
+        a  {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        a:hover { background: #0052a3; }
+        .endpoints { margin-top: 30px; text-align: left; }
+        .endpoints table { border-collapse: collapse; width: 100%; }
+        .endpoints td { padding: 8px 12px; border-bottom: 1px solid #eee; font-size: 14px; }
+        .endpoints td:first-child { color: #0066cc; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>&#127979; Smart Campus API</h1>
+        <p>Redirecting to the API discovery endpoint&#x2026;</p>
+        <a href="/smart-campus-api/api/v1">Go to API</a>
+
+        <div class="endpoints">
+            <table>
+                <tr><td>GET /api/v1</td><td>Discovery &amp; metadata</td></tr>
+                <tr><td>GET /api/v1/rooms</td><td>List all rooms</td></tr>
+                <tr><td>GET /api/v1/sensors</td><td>List all sensors</td></tr>
+                <tr><td>GET /api/v1/sensors?type=CO2</td><td>Filter sensors by type</td></tr>
+                <tr><td>GET /api/v1/sensors/{id}/readings</td><td>Sensor reading history</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
